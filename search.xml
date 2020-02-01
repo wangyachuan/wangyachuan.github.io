@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo链接跳转问题</title>
+    <url>/2020/02/01/hexo%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>盒模型</title>
+    <url>/2020/02/01/%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h3><p><img src="./%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B.png" alt=""></p>
+<blockquote>
+<p>在标准模式下，一个块的总宽度= width + padding(左右) + border(左右) + margin(左右)</p>
+</blockquote>
+<p><img src="./IE%E7%9B%92%E6%A8%A1%E5%9E%8B.png" alt=""></p>
+<blockquote>
+<p>而IE盒模型或怪异盒模型显而易见的区别就是，width和height除了content区域外，还包含padding和border。盒子的总宽度为</p>
+</blockquote>
+<p>一个块的总宽度= width + margin(左右)（即width已经包含了padding和border值）</p>
+<h3 id="flexbox"><a href="#flexbox" class="headerlink" title="flexbox"></a>flexbox</h3><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="https://changk99.github.io/flexbox/" target="_blank" rel="noopener">flexbox示例</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git</title>
+    <url>/2020/02/01/git/</url>
+    <content><![CDATA[<h3 id="git-工作流程"><a href="#git-工作流程" class="headerlink" title="git 工作流程"></a>git 工作流程</h3><ol>
+<li>在工作目录中修改文件。</li>
+<li>暂存文件，将文件的快照放入暂存区域。</li>
+<li>提交更新，找到暂存区域的文件，将快照永久性存储到 Git 仓库目录。</li>
+</ol>
+<h3 id="设置用户名和邮箱"><a href="#设置用户名和邮箱" class="headerlink" title="设置用户名和邮箱"></a>设置用户名和邮箱</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name <span class="string">"John Doe"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email johndoe@example.com</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="列出所有-Git-当时能找到的配置"><a href="#列出所有-Git-当时能找到的配置" class="headerlink" title="列出所有 Git 当时能找到的配置"></a>列出所有 Git 当时能找到的配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br><span class="line">git config -l</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git status</span><br><span class="line">git status -s</span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// 初始化仓库</span><br><span class="line">git init</span><br><span class="line">// 添加内容到下一次提交中</span><br><span class="line">git add &lt;file&gt;</span><br><span class="line">// 提交记录</span><br><span class="line">git commit -m &lt;message&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="忽略文件-gitignore"><a href="#忽略文件-gitignore" class="headerlink" title="忽略文件 .gitignore"></a>忽略文件 .gitignore</h3><h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//添加 origin</span><br><span class="line">git remote add origin &lt;URL&gt;</span><br><span class="line">//移除 origin</span><br><span class="line">git remote rm origin  </span><br><span class="line">//显示remote</span><br><span class="line">git remote -v</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送代码到远程仓库"><a href="#推送代码到远程仓库" class="headerlink" title="推送代码到远程仓库"></a>推送代码到远程仓库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h3 id="拉取远端代码"><a href="#拉取远端代码" class="headerlink" title="拉取远端代码"></a>拉取远端代码</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git merge origin/master</span><br><span class="line">//or</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<h3 id="clone-代码"><a href="#clone-代码" class="headerlink" title="clone 代码"></a>clone 代码</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone &lt;url&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="贮藏"><a href="#贮藏" class="headerlink" title="贮藏"></a>贮藏</h3><p>开发过程中,已变更,但是又不需要立即提交的代码.如遇到需要先合并代码的情况,可先使用贮藏.</p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师博客</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/02/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>

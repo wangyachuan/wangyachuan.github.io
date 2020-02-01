@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>王亚川</title>
+  
+  <subtitle>blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-02-01T01:14:20.163Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>王亚川</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo链接跳转问题</title>
+    <link href="http://yoursite.com/2020/02/01/hexo%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/02/01/hexo%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E9%97%AE%E9%A2%98/</id>
+    <published>2020-02-01T01:14:20.163Z</published>
+    <updated>2020-02-01T01:14:20.163Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>盒模型</title>
+    <link href="http://yoursite.com/2020/02/01/%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/02/01/%E7%9B%92%E6%A8%A1%E5%9E%8B/</id>
+    <published>2020-02-01T00:56:42.464Z</published>
+    <updated>2020-02-01T01:00:04.729Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;盒模型&quot;&gt;&lt;a href=&quot;#盒模型&quot; class=&quot;headerlink&quot; title=&quot;盒模型&quot;&gt;&lt;/a&gt;盒模型&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;./%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git</title>
+    <link href="http://yoursite.com/2020/02/01/git/"/>
+    <id>http://yoursite.com/2020/02/01/git/</id>
+    <published>2020-01-31T20:52:58.290Z</published>
+    <updated>2020-01-31T20:54:45.170Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;git-工作流程&quot;&gt;&lt;a href=&quot;#git-工作流程&quot; class=&quot;headerlink&quot; title=&quot;git 工作流程&quot;&gt;&lt;/a&gt;git
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/02/01/hello-world/"/>
+    <id>http://yoursite.com/2020/02/01/hello-world/</id>
+    <published>2020-01-31T19:59:54.470Z</published>
+    <updated>2020-01-31T18:17:12.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
