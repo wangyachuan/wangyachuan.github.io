@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-01T01:14:20.163Z</updated>
+  <updated>2020-02-02T11:43:01.195Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FlexBox</title>
+    <link href="http://yoursite.com/2020/02/02/FlexBox/"/>
+    <id>http://yoursite.com/2020/02/02/FlexBox/</id>
+    <published>2020-02-02T11:43:01.191Z</published>
+    <updated>2020-02-02T11:43:01.195Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[TOC]&lt;br&gt;###Flex 布局是什么？&lt;br&gt;Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
+&lt;p&gt;任何一个容器都可以指定为 Flex 布局。&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hexo链接跳转问题</title>
