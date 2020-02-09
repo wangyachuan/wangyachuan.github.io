@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Promise</title>
+    <url>/2020/02/09/Promise/</url>
+    <content><![CDATA[<h3 id="Promise的含义"><a href="#Promise的含义" class="headerlink" title="Promise的含义"></a>Promise的含义</h3><p>Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。<br>Promise里面通常保存着异步操作的结果，语法来说。Promise是一个对象，用于获取异步操作的消息。Promise提供统一的API，各种异步都可以用同步的方法来处理，大大解决了，代码的维护，处理。</p>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ... some code</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="comment">/* 异步操作成功 */</span>)&#123;</span><br><span class="line">    resolve(value);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    reject(error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>resolve方法是成功时调用否则调用reject方法</p>
+<h4 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all()"></a>Promise.all()</h4><p>Promise.all()方法用于将多个 Promise 实例，包装成一个新的 Promise 实例。<br>当函数内部中所有的请求都成功时调用resolve方法，其中一个为失败时则调用reject</p>
+<h4 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h4><p>是专门来配合Promise来使用的</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">XXX</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> a=<span class="number">12</span>;</span><br><span class="line">    <span class="keyword">let</span> b=a;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> data=<span class="keyword">await</span> <span class="built_in">Promise</span>;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    alert(a+b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> XXX=asnys()&gt;=&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码用同步的代码来写，执行线程是异步的，方便于代码的维护，写起来也没有那么头痛了，以前多个请求里来处理数据时简直就是回调地狱，async/await的诞生更极大简单化，数据处理的简洁化，<br>Promise几乎不能独立来使用真正让promise大放光彩的就是async/await.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>FlexBox</title>
     <url>/2020/02/02/FlexBox/</url>
     <content><![CDATA[<p>[TOC]<br>###Flex 布局是什么？<br>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。</p>

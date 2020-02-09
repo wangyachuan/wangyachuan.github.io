@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    盒模型 |  王亚川
+    Promise |  王亚川
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -36,7 +36,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-盒模型" class="article article-type-post" itemscope
+  <article id="post-Promise" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -44,7 +44,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  盒模型
+  Promise
 </h1>
   
 
@@ -53,8 +53,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/02/01/%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="article-date">
-  <time datetime="2020-02-01T00:56:42.464Z" itemprop="datePublished">2020-02-01</time>
+      <a href="/2020/02/09/Promise/" class="article-date">
+  <time datetime="2020-02-09T07:15:14.000Z" itemprop="datePublished">2020-02-09</time>
 </a>
       
       
@@ -64,7 +64,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">92字</span>
+            <span class="post-count">366字</span>
         </span>
     </span>
 
@@ -99,16 +99,14 @@
       
 
       
-      <h3 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h3><p><img src="./%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B.png" alt=""></p>
-<blockquote>
-<p>在标准模式下，一个块的总宽度= width + padding(左右) + border(左右) + margin(左右)</p>
-</blockquote>
-<p><img src="./IE%E7%9B%92%E6%A8%A1%E5%9E%8B.png" alt=""></p>
-<blockquote>
-<p>而IE盒模型或怪异盒模型显而易见的区别就是，width和height除了content区域外，还包含padding和border。盒子的总宽度为</p>
-</blockquote>
-<p>一个块的总宽度= width + margin(左右)（即width已经包含了padding和border值）</p>
-<h3 id="flexbox"><a href="#flexbox" class="headerlink" title="flexbox"></a>flexbox</h3><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="https://changk99.github.io/flexbox/" target="_blank" rel="noopener">flexbox示例</a></p>
+      <h3 id="Promise的含义"><a href="#Promise的含义" class="headerlink" title="Promise的含义"></a>Promise的含义</h3><p>Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。<br>Promise里面通常保存着异步操作的结果，语法来说。Promise是一个对象，用于获取异步操作的消息。Promise提供统一的API，各种异步都可以用同步的方法来处理，大大解决了，代码的维护，处理。</p>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ... some code</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="comment">/* 异步操作成功 */</span>)&#123;</span><br><span class="line">    resolve(value);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    reject(error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>resolve方法是成功时调用否则调用reject方法</p>
+<h4 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all()"></a>Promise.all()</h4><p>Promise.all()方法用于将多个 Promise 实例，包装成一个新的 Promise 实例。<br>当函数内部中所有的请求都成功时调用resolve方法，其中一个为失败时则调用reject</p>
+<h4 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h4><p>是专门来配合Promise来使用的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">XXX</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> a=<span class="number">12</span>;</span><br><span class="line">    <span class="keyword">let</span> b=a;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> data=<span class="keyword">await</span> <span class="built_in">Promise</span>;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    alert(a+b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> XXX=asnys()&gt;=&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码用同步的代码来写，执行线程是异步的，方便于代码的维护，写起来也没有那么头痛了，以前多个请求里来处理数据时简直就是回调地狱，async/await的诞生更极大简单化，数据处理的简洁化，<br>Promise几乎不能独立来使用真正让promise大放光彩的就是async/await.</p>
 
       
       <!-- 打赏 -->
@@ -119,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/01/%E7%9B%92%E6%A8%A1%E5%9E%8B/" data-id="ck6eqd27r0005q8plggkg7slt"
+      <a data-url="http://yoursite.com/2020/02/09/Promise/" data-id="ck6eqd27q0003q8pl9e9jdwrn"
         class="article-share-link">分享</a>
       
     </footer>
@@ -130,19 +128,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/02/01/hexo%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E9%97%AE%E9%A2%98/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            hexo链接跳转问题
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/02/01/git/" class="article-nav-link">
+      <a href="/2020/02/02/FlexBox/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">git</div>
+        <div class="article-nav-title">FlexBox</div>
       </a>
     
   </nav>
